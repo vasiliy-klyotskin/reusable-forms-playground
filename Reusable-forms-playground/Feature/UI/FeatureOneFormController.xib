@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeatureOneFormController" customModule="Reusable_forms_playground" customModuleProvider="target">
+            <connections>
+                <outlet property="emailField" destination="8rT-Lm-UHO" id="LjU-Am-4Aq"/>
+                <outlet property="iinField" destination="M6Z-pN-ORs" id="1Ka-cc-PFB"/>
+                <outlet property="phoneField" destination="5x1-nI-cRa" id="tFH-cr-e6m"/>
+                <outlet property="statusLabel" destination="alM-cn-7yY" id="ubu-vb-Z3I"/>
+                <outlet property="submitButton" destination="U7k-5I-l6G" id="Wv7-CQ-ABZ"/>
+                <outlet property="switchControl" destination="D5D-a2-kaz" id="RXm-R8-9qv"/>
+                <outlet property="view" destination="iN0-l3-epB" id="5Hz-K9-K9k"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="N93-69-RZJ">
+                    <rect key="frame" x="20" y="79" width="353" height="311"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone: (It must contain &quot;+&quot;)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5l-Lw-nd8">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="353" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="5x1-nI-cRa" userLabel="phoneContainer">
+                            <rect key="frame" x="0.0" y="40.333333333333329" width="353" height="50"/>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: (it must contain &quot;@&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vP8-vq-hX6">
+                            <rect key="frame" x="0.0" y="110.33333333333334" width="353" height="20.333333333333343"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="353" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="8rT-Lm-UHO" userLabel="emailContainer">
+                            <rect key="frame" x="0.0" y="150.66666666666666" width="353" height="50"/>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IIN: (it must contain &quot;0&quot;)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKy-4g-DDq">
+                            <rect key="frame" x="0.0" y="220.66666666666669" width="353" height="20.333333333333343"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="353" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="M6Z-pN-ORs" userLabel="iinContainer">
+                            <rect key="frame" x="0.0" y="261" width="353" height="50"/>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7k-5I-l6G">
+                    <rect key="frame" x="20" y="738" width="353" height="60"/>
+                    <color key="backgroundColor" systemColor="systemCyanColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="cbh-SJ-Sbr"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                    <connections>
+                        <action selector="submitPressed:" destination="-1" eventType="touchUpInside" id="bVy-oT-FFk"/>
+                    </connections>
+                </button>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5D-a2-kaz">
+                    <rect key="frame" x="324" y="687" width="51" height="31"/>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alM-cn-7yY">
+                    <rect key="frame" x="20" y="577" width="353" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="kUI-uF-BHW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree with Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw4-Oj-4D3">
+                    <rect key="frame" x="20" y="692.33333333333337" width="258.33333333333331" height="20.333333333333371"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="N93-69-RZJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="0Hm-jA-MaS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="N93-69-RZJ" secondAttribute="trailing" constant="20" id="9dt-Fx-UYg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="U7k-5I-l6G" secondAttribute="trailing" constant="20" id="Ea4-RM-1oV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="alM-cn-7yY" secondAttribute="trailing" constant="20" id="S59-bf-xHp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="D5D-a2-kaz" secondAttribute="trailing" constant="20" id="Spq-jm-Rkq"/>
+                <constraint firstItem="D5D-a2-kaz" firstAttribute="top" secondItem="alM-cn-7yY" secondAttribute="bottom" constant="50" id="UMZ-56-mTV"/>
+                <constraint firstItem="U7k-5I-l6G" firstAttribute="top" secondItem="D5D-a2-kaz" secondAttribute="bottom" constant="20" id="XJ0-at-XEB"/>
+                <constraint firstItem="aw4-Oj-4D3" firstAttribute="centerY" secondItem="D5D-a2-kaz" secondAttribute="centerY" id="ZMG-Z3-DLc"/>
+                <constraint firstItem="N93-69-RZJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Ziu-LS-t7A"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="U7k-5I-l6G" secondAttribute="bottom" constant="20" id="dT5-W5-yOA"/>
+                <constraint firstItem="aw4-Oj-4D3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="eMU-LL-hub"/>
+                <constraint firstItem="alM-cn-7yY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="suU-cg-edN"/>
+                <constraint firstItem="U7k-5I-l6G" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="upq-f9-TaT"/>
+            </constraints>
+            <point key="canvasLocation" x="124" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
