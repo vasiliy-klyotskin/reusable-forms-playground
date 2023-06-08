@@ -20,6 +20,10 @@ extension Inputs {
 
 typealias Submit<Request> = (Request) -> (@escaping (Result<Void, Error>) -> Void) -> Void
 
+typealias AsyncValidation = (String) -> (@escaping (Result<TextValidationResult, Error>) -> Void) -> Void
+
+typealias Validation = (String) -> TextValidationResult
+
 struct Views<SubmitView: ResourceView, ValidationView: ResourceView> {
     let submitErrorView: ResourceErrorView
     let submitLoadingView: ResourceLoadingView
