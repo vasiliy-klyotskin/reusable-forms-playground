@@ -35,15 +35,15 @@ enum FeatureOneFormComposer {
     }
 
     static private func composeFeatureOneViews(controller: FeatureOneFormController) -> Views<DispatchDecorator<FeatureSubmitViewWrapper>, DispatchDecorator<FeatureValidationViewWrapper>> {
-        let submitView = FeatureSubmitViewWrapper(controller)
-        let validationView = FeatureValidationViewWrapper(controller)
+        let submitView = DispatchDecorator(FeatureSubmitViewWrapper(controller))
+        let validationView = DispatchDecorator(FeatureValidationViewWrapper(controller))
         return .init(
-            submitErrorView: DispatchDecorator(submitView),
-            submitLoadingView: DispatchDecorator(submitView),
-            submitView: DispatchDecorator(submitView),
-            validationErrorView: DispatchDecorator(validationView),
-            validationLoadingView: DispatchDecorator(validationView),
-            validationView: DispatchDecorator(validationView)
+            submitErrorView: submitView,
+            submitLoadingView: submitView,
+            submitView: submitView,
+            validationErrorView: validationView,
+            validationLoadingView: validationView,
+            validationView: validationView
         )
     }
 
